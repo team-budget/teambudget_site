@@ -5,6 +5,7 @@ description: >-
   without spreadsheets — built for volunteer treasurers who need clarity fast.
 baseurl: ""
 url: ""
+login_url: "http://localhost:3000"
 
 plugins:
   - jekyll-feed

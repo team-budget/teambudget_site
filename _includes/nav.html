@@ -7,7 +7,7 @@
         <span>{{ site.title }}</span>
       </a>
       <div class="nav-links">
-        {% assign login_href = ENV.LOGIN_URL | default: "http://localhost:3000" %}
+        {% assign login_href = site.login_url | default: "http://localhost:3000" %}
         {% assign current_url = page.url | default: '' %}
         <a class="button ghost" href="{{ login_href }}">Login</a>
         <a class="{% if current_url contains '/blog/' %}nav-active{% endif %}" href="/blog/">Blog</a>
