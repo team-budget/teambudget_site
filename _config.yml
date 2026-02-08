@@ -3,6 +3,7 @@ email: hello@hockeytreasurer.app
 description: >-
   Team Budget makes hockey team finances simple. Track budgets, payments, and reconciliation
   without spreadsheets — built for volunteer treasurers who need clarity fast.
+tagline: "For hockey parents by a hockey parent"
 baseurl: ""
 url: ""
 login_url: "http://localhost:3000"
