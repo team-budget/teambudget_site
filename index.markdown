@@ -8,11 +8,11 @@ layout: default
       <p class="kicker">Team Budget for Hockey</p>
       <h1>Run your hockey team budget with confidence — without spreadsheets.</h1>
       <p class="lead">
-        Team Budget makes hockey team finances simple. Track budgets, payments, and reconciliation in one
-        calm, organized place for volunteer treasurers who need accurate reporting and less end-of-season chaos.
+        Track budgets, payments, and money match checks in one calm, organized place. Built for volunteer
+        treasurers who need clear reporting and less end-of-season chaos.
       </p>
       <div class="cta-row">
-        <a class="button primary" href="#contact">Request Demo</a>
+        <a class="button primary" href="#" data-modal-open>Request Demo</a>
         <a class="button ghost" href="#tour">See How It Works</a>
       </div>
       <div class="hero-metrics">
@@ -31,33 +31,37 @@ layout: default
       </div>
     </div>
     <div class="hero-card">
-      <div class="card-header">Season Snapshot</div>
+      <div class="card-header">Team Money Status</div>
       <div class="card-row">
-        <span>Budget used</span>
-        <strong>$8,450 / $12,000</strong>
+        <span>Expected</span>
+        <strong>$11,200</strong>
+      </div>
+      <div class="card-row">
+        <span>Current</span>
+        <strong>$10,960</strong>
       </div>
       <div class="progress">
         <div class="progress-bar"></div>
       </div>
       <div class="card-grid">
         <div>
+          <div class="label">Difference</div>
+          <div class="value">-$240</div>
+        </div>
+        <div>
           <div class="label">Outstanding</div>
           <div class="value">$1,240</div>
         </div>
         <div>
-          <div class="label">Reimbursements</div>
+          <div class="label">Refunds</div>
           <div class="value">$380</div>
         </div>
         <div>
-          <div class="label">Parent payments</div>
-          <div class="value">18 / 22</div>
-        </div>
-        <div>
-          <div class="label">Last reconciliation</div>
+          <div class="label">Last check</div>
           <div class="value">2 days ago</div>
         </div>
       </div>
-      <div class="card-footer">Automatically updated from every transaction.</div>
+      <div class="card-footer">Always visible so you can quickly confirm if team money matches.</div>
     </div>
   </div>
 </section>
@@ -65,7 +69,7 @@ layout: default
 <section class="trust">
   <div class="container trust-row">
     <div class="muted">Trusted by community teams, association admins, and volunteer treasurers</div>
-    <div class="trust-pill">Data-secure</div>
+    <div class="trust-pill">Money match checks</div>
     <div class="trust-pill">Audit history</div>
     <div class="trust-pill">Roster-linked payments</div>
   </div>
@@ -84,15 +88,15 @@ layout: default
       </div>
       <div class="info-card">
         <h3>Missing payments</h3>
-        <p>Track balances by player and set automatic reminders.</p>
+        <p>Track who paid, what is outstanding, and what refunds were issued.</p>
       </div>
       <div class="info-card">
         <h3>Reporting headaches</h3>
-        <p>Generate clean, audit-ready reports in seconds.</p>
+        <p>Generate clean, audit-ready reports with visual change history.</p>
       </div>
       <div class="info-card">
-        <h3>Zero visibility</h3>
-        <p>Share read-only snapshots with parents and staff when needed.</p>
+        <h3>Money uncertainty</h3>
+        <p>Run a simple team money check with expected, current, and difference values.</p>
       </div>
     </div>
   </div>
@@ -108,33 +112,37 @@ layout: default
       <div class="feature-card">
         <span class="pill">Budget & Expenses</span>
         <h3>Know where every dollar goes.</h3>
-        <p>Track planned vs. actual spending with category-level detail and live totals.</p>
+        <p>Track spending plus adjustments like refunds and "other" revenue offsets in one budget view.</p>
       </div>
       <div class="feature-card">
         <span class="pill">Transactions</span>
-        <h3>Record payments instantly.</h3>
-        <p>Log deposits, reimbursements, and receipts with a clean history trail.</p>
+        <h3>Track receipts and reimbursements instantly.</h3>
+        <p>Capture every payment and expense with complete, time-stamped history.</p>
+      </div>
+      <div class="feature-card">
+        <span class="pill">Team Money Status</span>
+        <h3>Always know if team money matches.</h3>
+        <p>Keep expected, current, and difference visible so issues are caught early.</p>
       </div>
       <div class="feature-card">
         <span class="pill">Roster Payments</span>
-        <h3>See each player’s balance at a glance.</h3>
-        <p>Assign parent payments, track outstanding amounts, and follow up fast.</p>
+        <h3>See each player balance at a glance.</h3>
+        <p>Set parent payments expected, track refunds, and follow up confidently.</p>
       </div>
       <div class="feature-card">
         <span class="pill">Audit History</span>
-        <h3>Trust every change.</h3>
-        <p>Automatic change logs keep your records accurate and transparent.</p>
+        <h3>See exactly what changed.</h3>
+        <p>Visual before/after change chips and quick links back to related transactions.</p>
       </div>
       <div class="feature-card">
         <span class="pill">Admin Controls</span>
         <h3>Manage multiple teams with confidence.</h3>
-        <p>Secure access, impersonation tools, and system controls for associations.</p>
+        <p>Secure access, user management, and impersonation for associations.</p>
       </div>
-      <div class="feature-card">
-        <span class="pill">Imports</span>
-        <h3>Move off spreadsheets in minutes.</h3>
-        <p>Bulk CSV imports for rosters, transactions, and historical budgets.</p>
-      </div>
+    </div>
+    <div class="cta-row" style="margin-top: 28px;">
+      <a class="button primary" href="#" data-modal-open>Request Demo</a>
+      <a class="button ghost" href="#pricing">View Pricing</a>
     </div>
   </div>
 </section>
@@ -149,17 +157,17 @@ layout: default
       <div class="step">
         <div class="step-number">01</div>
         <h3>Create your team</h3>
-        <p>Invite co-managers, import last season’s data, and set your categories.</p>
+        <p>Invite co-managers and set season categories.</p>
       </div>
       <div class="step">
         <div class="step-number">02</div>
         <h3>Set budgets & roster</h3>
-        <p>Assign parent payment expectations and view balances by player.</p>
+        <p>Assign expected parent payments and load your roster.</p>
       </div>
       <div class="step">
         <div class="step-number">03</div>
-        <h3>Track & reconcile</h3>
-        <p>Record transactions, approve reimbursements, and export reports anytime.</p>
+        <h3>Track payments & money checks</h3>
+        <p>Record transactions, monitor refunds, and keep money match status up to date.</p>
       </div>
     </div>
   </div>
@@ -169,24 +177,24 @@ layout: default
   <div class="container">
     <div class="section-heading">
       <h2>Product tour</h2>
-      <p class="muted">Every screen is designed for speed, visibility, and audit-ready accuracy.</p>
+      <p class="muted">Focused views for budget, roster, transactions, finances, and audit history.</p>
     </div>
     <div class="tour-grid">
       <div class="tour-card">
         <div class="tour-label">Budget overview</div>
-        <div class="tour-placeholder">Budget, categories, and totals view</div>
+        <div class="tour-placeholder">Read-only Other and Refunds revenue rows with clear explanations</div>
       </div>
       <div class="tour-card">
         <div class="tour-label">Roster payments</div>
-        <div class="tour-placeholder">Balance-by-player dashboard</div>
+        <div class="tour-placeholder">Parent balances plus a dedicated Refunds column</div>
       </div>
       <div class="tour-card">
-        <div class="tour-label">Transactions</div>
-        <div class="tour-placeholder">Receipts, deposits, reimbursements</div>
+        <div class="tour-label">Team Money Status strip</div>
+        <div class="tour-placeholder">Persistent Expected / Current / Difference with Pin toggle</div>
       </div>
       <div class="tour-card">
-        <div class="tour-label">Audit history</div>
-        <div class="tour-placeholder">Full change log by user and date</div>
+        <div class="tour-label">History</div>
+        <div class="tour-placeholder">Action pills and visual before/after field change chips</div>
       </div>
     </div>
   </div>
@@ -227,7 +235,7 @@ layout: default
           <li>Budget & transactions</li>
           <li>Basic reporting</li>
         </ul>
-        <a class="button ghost" href="#contact">Start Free Trial</a>
+        <a class="button ghost" href="#" data-modal-open>Start Free Trial</a>
       </div>
       <div class="pricing-card featured">
         <div class="pricing-title">League Standard</div>
@@ -235,10 +243,10 @@ layout: default
         <div class="pricing-period">per team / season</div>
         <ul>
           <li>Unlimited roster entries</li>
-          <li>Payments + reconciliation</li>
+          <li>Payments + money checks</li>
           <li>Audit history and exports</li>
         </ul>
-        <a class="button primary" href="#contact">Request Demo</a>
+        <a class="button primary" href="#" data-modal-open>Request Demo</a>
       </div>
       <div class="pricing-card">
         <div class="pricing-title">Association</div>
@@ -249,7 +257,7 @@ layout: default
           <li>Bulk imports</li>
           <li>Priority support</li>
         </ul>
-        <a class="button ghost" href="#contact">Contact Sales</a>
+        <a class="button ghost" href="#" data-modal-open>Contact Sales</a>
       </div>
     </div>
   </div>
@@ -268,11 +276,11 @@ layout: default
       </div>
       <div class="faq-item">
         <h3>Can multiple people access a team?</h3>
-        <p>Invite coaches, managers, or other treasurers with role-based access.</p>
+        <p>Yes. Invite coaches, managers, or other treasurers with role-based access.</p>
       </div>
       <div class="faq-item">
         <h3>Is data secure?</h3>
-        <p>Yes. Every change is logged and permissioned with audit-ready history.</p>
+        <p>Yes. Every change is permissioned and fully logged in audit history.</p>
       </div>
     </div>
   </div>
@@ -282,9 +290,9 @@ layout: default
   <div class="container docs">
     <div>
       <h2>Documentation built for volunteers.</h2>
-      <p class="muted">Onboarding checklists, how-to guides, and quick-start videos.</p>
+      <p class="muted">Onboarding checklists, how-to guides, and quick-start workflows.</p>
     </div>
-    <a class="button ghost" href="#contact">View Getting Started</a>
+    <a class="button ghost" href="/docs/">View Getting Started</a>
   </div>
 </section>
 
@@ -294,7 +302,7 @@ layout: default
       <h2>About us</h2>
       <p>
         We help community teams thrive by making finances simple, transparent, and trustworthy.
-        Your season shouldn’t depend on complicated spreadsheets.
+        Your season should not depend on complicated spreadsheets.
       </p>
     </div>
     <div class="about-card">
@@ -303,5 +311,15 @@ layout: default
       <div class="about-label">Values</div>
       <p>Clarity, accountability, and community-first tooling.</p>
     </div>
+  </div>
+</section>
+
+<section class="section" id="final-cta">
+  <div class="container docs">
+    <div>
+      <h2>Ready for a calmer season?</h2>
+      <p class="muted">Use Team Budget for Hockey to track every dollar with confidence.</p>
+    </div>
+    <a class="button primary" href="#" data-modal-open>Request Demo</a>
   </div>
 </section>
