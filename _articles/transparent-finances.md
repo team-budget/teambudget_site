@@ -1,7 +1,8 @@
 ---
 title: Why transparent finances build stronger teams
 subtitle: Confidence for parents and a calmer season for volunteers.
-created: 2026-02-11
+created: 2026-02-11 09:00:00 -0500
+updated: 2026-02-11 09:00:00 -0500
 author: author_name
 ---
 

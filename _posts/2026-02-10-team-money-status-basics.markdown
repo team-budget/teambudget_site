@@ -1,6 +1,7 @@
 ---
 title: Team money status basics for treasurers
-created: 2026-02-10
+created: 2026-02-10 09:30:00 -0500
+updated: 2026-02-10 09:30:00 -0500
 author: author_name
 ---
 
