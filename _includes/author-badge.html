@@ -1,0 +1,29 @@
+{% assign author_key = include.author_key | default: page.author %}
+{% assign author = site.data.authors[author_key] %}
+{% assign author_name = author.name | default: author_key %}
+{% assign name_parts = author_name | split: ' ' %}
+{% assign first_initial = name_parts[0] | slice: 0, 1 | upcase %}
+{% if name_parts.size > 1 %}
+  {% assign last_initial = name_parts | last | slice: 0, 1 | upcase %}
+{% else %}
+  {% assign last_initial = '' %}
+{% endif %}
+{% assign initials = first_initial | append: last_initial %}
+
+<div class="author-badge{% if include.compact %} compact{% endif %}">
+  <div class="author-avatar" aria-hidden="true">
+    <img
+      src="{{ '/assets/images/' | append: author_key | append: '.png' | relative_url }}"
+      alt="{{ author_name }}"
+      loading="lazy"
+      onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';"
+    />
+    <span class="author-avatar-fallback">{{ initials }}</span>
+  </div>
+  <div class="author-details">
+    <span class="author-name">{{ author_name }}</span>
+    {% if include.show_email and author.email %}
+      <span class="author-email">{{ author.email }}</span>
+    {% endif %}
+  </div>
+</div>

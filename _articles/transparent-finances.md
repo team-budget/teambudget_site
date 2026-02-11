@@ -1,6 +1,8 @@
 ---
 title: Why transparent finances build stronger teams
 subtitle: Confidence for parents and a calmer season for volunteers.
+created: 2026-02-11
+author: author_name
 ---
 
 Transparent finances work when updates are simple and consistent.

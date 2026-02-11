@@ -659,6 +659,67 @@ textarea {
   color: var(--muted);
 }
 
+.content-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.author-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.author-badge.compact {
+  margin-bottom: 10px;
+}
+
+.author-avatar {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: rgba(31, 95, 163, 0.15);
+}
+
+.author-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.author-avatar-fallback {
+  display: none;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-strong);
+}
+
+.author-details {
+  display: grid;
+  line-height: 1.2;
+}
+
+.author-name {
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.author-email {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
 @keyframes fadeUp {
   from {
     opacity: 0;
