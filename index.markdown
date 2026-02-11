@@ -8,7 +8,7 @@ layout: default
       <p class="kicker">Team Budget for Hockey</p>
       <h1>Run your hockey team budget with confidence — without spreadsheets.</h1>
       <p class="lead">
-        Track budgets, payments, and money match checks in one calm, organized place. Built for volunteer
+        Track budgets, payments, and team money status in one calm, organized place. Built for volunteer
         treasurers who need clear reporting and less end-of-season chaos.
       </p>
       <div class="cta-row">
@@ -69,7 +69,7 @@ layout: default
 <section class="trust">
   <div class="container trust-row">
     <div class="muted">Trusted by community teams, association admins, and volunteer treasurers</div>
-    <div class="trust-pill">Money match checks</div>
+    <div class="trust-pill">Team money status</div>
     <div class="trust-pill">Audit history</div>
     <div class="trust-pill">Roster-linked payments</div>
   </div>
@@ -79,7 +79,7 @@ layout: default
   <div class="container">
     <div class="section-heading">
       <h2>Replace end-of-season chaos with real-time clarity.</h2>
-      <p class="muted">Every pain point has a built-in fix — no more chasing parents or reconciling late.</p>
+      <p class="muted">Every pain point has a built-in fix — no more chasing parents or guessing where money stands.</p>
     </div>
     <div class="grid four">
       <div class="info-card">
@@ -96,7 +96,7 @@ layout: default
       </div>
       <div class="info-card">
         <h3>Money uncertainty</h3>
-        <p>Run a simple team money check with expected, current, and difference values.</p>
+        <p>Use expected, current, and difference values to catch issues early.</p>
       </div>
     </div>
   </div>
@@ -130,6 +130,36 @@ layout: default
         <p>Set parent payments expected, track refunds, and follow up confidently.</p>
       </div>
       <div class="feature-card">
+        <span class="pill">Expense Category Sync</span>
+        <h3>Keep budget rows and transactions aligned.</h3>
+        <p>Rename expense categories inline and automatically sync matching transaction categories.</p>
+      </div>
+      <div class="feature-card">
+        <span class="pill">Member Invites</span>
+        <h3>Control team access safely.</h3>
+        <p>Invite by email, keep access pending until accepted, and use role-based permissions.</p>
+      </div>
+      <div class="feature-card">
+        <span class="pill">In-App Feedback</span>
+        <h3>Capture ideas and bugs fast.</h3>
+        <p>Any signed-in user can submit ideas, bugs, questions, or comments from inside the app.</p>
+      </div>
+      <div class="feature-card">
+        <span class="pill">Feedback Moderation</span>
+        <h3>Review feedback in one inbox.</h3>
+        <p>Admins can review, resend notifications, and clear resolved items with clear modal confirmations.</p>
+      </div>
+      <div class="feature-card">
+        <span class="pill">Demo Team Cloning</span>
+        <h3>Create realistic demos quickly.</h3>
+        <p>Clone teams with configurable anonymization and transaction cloning controls for safe demos.</p>
+      </div>
+      <div class="feature-card">
+        <span class="pill">Email Notifications</span>
+        <h3>Keep people informed automatically.</h3>
+        <p>Welcome, password reset, and feedback confirmation emails set clear next steps.</p>
+      </div>
+      <div class="feature-card">
         <span class="pill">Audit History</span>
         <h3>See exactly what changed.</h3>
         <p>Visual before/after change chips and quick links back to related transactions.</p>
@@ -137,7 +167,7 @@ layout: default
       <div class="feature-card">
         <span class="pill">Admin Controls</span>
         <h3>Manage multiple teams with confidence.</h3>
-        <p>Secure access, user management, and impersonation for associations.</p>
+        <p>User management, impersonation, and admin settings for associations.</p>
       </div>
     </div>
     <div class="cta-row" style="margin-top: 28px;">
@@ -166,8 +196,8 @@ layout: default
       </div>
       <div class="step">
         <div class="step-number">03</div>
-        <h3>Track payments & money checks</h3>
-        <p>Record transactions, monitor refunds, and keep money match status up to date.</p>
+        <h3>Track payments & team money status</h3>
+        <p>Record transactions, monitor refunds, and keep expected/current/difference up to date.</p>
       </div>
     </div>
   </div>
@@ -193,6 +223,10 @@ layout: default
         <div class="tour-placeholder">Persistent Expected / Current / Difference with Pin toggle</div>
       </div>
       <div class="tour-card">
+        <div class="tour-label">Finances</div>
+        <div class="tour-placeholder">Bank Balance, Cash on Hand, and Uncashed Cheques cards</div>
+      </div>
+      <div class="tour-card">
         <div class="tour-label">History</div>
         <div class="tour-placeholder">Action pills and visual before/after field change chips</div>
       </div>
@@ -208,11 +242,11 @@ layout: default
     </div>
     <div class="grid two">
       <div class="quote-card">
-        <p>“We closed the season in a single afternoon. No more frantic spreadsheet cleanup.”</p>
+        <p>"We closed the season in a single afternoon. No more frantic spreadsheet cleanup."</p>
         <div class="quote-author">— Minor hockey treasurer, U13</div>
       </div>
       <div class="quote-card">
-        <p>“Parents finally understand where the money goes. The transparency is incredible.”</p>
+        <p>"Parents finally understand where the money goes. The transparency is incredible."</p>
         <div class="quote-author">— Team manager, AAA</div>
       </div>
     </div>
@@ -243,18 +277,18 @@ layout: default
         <div class="pricing-period">per team / season</div>
         <ul>
           <li>Unlimited roster entries</li>
-          <li>Payments + money checks</li>
+          <li>Payments + team money status</li>
           <li>Audit history and exports</li>
         </ul>
         <a class="button primary" href="#" data-modal-open>Request Demo</a>
       </div>
       <div class="pricing-card">
         <div class="pricing-title">Association</div>
-        <div class="pricing-price">Let’s talk</div>
+        <div class="pricing-price">Let's talk</div>
         <div class="pricing-period">multi-team management</div>
         <ul>
           <li>Admin controls & impersonation</li>
-          <li>Bulk imports</li>
+          <li>Bulk imports and cloning</li>
           <li>Priority support</li>
         </ul>
         <a class="button ghost" href="#" data-modal-open>Contact Sales</a>
@@ -276,11 +310,31 @@ layout: default
       </div>
       <div class="faq-item">
         <h3>Can multiple people access a team?</h3>
-        <p>Yes. Invite coaches, managers, or other treasurers with role-based access.</p>
+        <p>Yes. Team members can view data, while treasurers/admins can edit financial workflows.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do team invites work if email is not configured yet?</h3>
+        <p>Invites can be created now and stay pending until accepted. Email delivery can be enabled separately.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do password reset emails work?</h3>
+        <p>Users request reset instructions and receive an email with a secure reset link.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What can members view vs edit?</h3>
+        <p>Members are read-only for financial operations. Treasurers/admins manage budget, roster, transactions, and history.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I submit feedback if I find a bug or have an idea?</h3>
+        <p>Use the in-app Feedback button. Submissions include context and go to the admin feedback inbox.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can we generate demo teams from real data without exposing personal information?</h3>
+        <p>Yes. Admins can clone with anonymization options for roster and transactions.</p>
       </div>
       <div class="faq-item">
         <h3>Is data secure?</h3>
-        <p>Yes. Every change is permissioned and fully logged in audit history.</p>
+        <p>Yes. Role-based permissions and full audit history protect sensitive financial data.</p>
       </div>
     </div>
   </div>
