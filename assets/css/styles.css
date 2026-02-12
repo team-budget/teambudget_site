@@ -565,10 +565,12 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 20px;
+  align-items: stretch;
 }
 
 .pricing-card {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
   padding: 28px;
 }
@@ -576,6 +578,13 @@ img {
 .pricing-card.featured {
   border: 2px solid rgba(109, 191, 255, 0.72);
   box-shadow: 0 24px 45px rgba(13, 53, 108, 0.42);
+}
+
+.pricing-head {
+  min-height: 128px;
+  display: grid;
+  align-content: start;
+  gap: 6px;
 }
 
 .pricing-title {
@@ -597,6 +606,10 @@ img {
   margin: 0;
   padding-left: 18px;
   color: #b4c7e5;
+}
+
+.pricing-card .button {
+  margin-top: auto;
 }
 
 .faq-grid {
