@@ -17,6 +17,7 @@ If guidance conflicts, follow this order.
 - Keep shared navigation + modal behavior in includes:
   - `_includes/nav.html`
   - `_includes/demo-modal.html`
+  - `_includes/footer.html`
 - Keep reusable content-area top sections in:
   - `_includes/page-hero.html`
 - Keep homepage sections modular in:

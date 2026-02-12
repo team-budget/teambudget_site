@@ -32,35 +32,7 @@
         </section>
       </main>
 
-      <footer class="site-footer">
-        <div class="container footer-grid">
-          <div>
-            <a class="logo" href="/">
-              <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="{{ site.title }} logo" />
-              <span>{{ site.title }}</span>
-            </a>
-            <p class="muted">{{ site.tagline }}</p>
-          </div>
-          <div>
-            <div class="footer-title">Explore</div>
-            <a href="/blog/">Blog</a>
-            <a href="/docs/">Documentation</a>
-            <a href="/articles/">Articles</a>
-          </div>
-          <div>
-            <div class="footer-title">Trust & Safety</div>
-            <a href="/#faq">FAQ</a>
-            <a href="#" data-modal-open>Support</a>
-            <a href="/#pricing">Pricing</a>
-          </div>
-          <div>
-            <div class="footer-title">Contact</div>
-            <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-            <span>Response within 24 hours</span>
-          </div>
-        </div>
-        <div class="footer-bottom">© 2026 Team Budget. All rights reserved.</div>
-      </footer>
+      {% include footer.html %}
     </div>
   </body>
 </html>

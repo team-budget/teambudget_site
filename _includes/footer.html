@@ -1,0 +1,41 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      {% if include.home_links %}
+        <a class="logo" href="#top">
+      {% else %}
+        <a class="logo" href="/">
+      {% endif %}
+        <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="{{ site.title }} logo" />
+        <span>{{ site.title }}</span>
+      </a>
+      <p class="muted">{{ site.tagline }}</p>
+    </div>
+    <div>
+      <div class="footer-title">Explore</div>
+      {% if include.home_links %}
+        <a href="/#features">Features</a>
+        <a href="/#tour">Product Tour</a>
+        <a href="/docs/">Documentation</a>
+      {% else %}
+        <a href="/blog/">Blog</a>
+        <a href="/docs/">Documentation</a>
+        <a href="/articles/">Articles</a>
+      {% endif %}
+    </div>
+    <div>
+      <div class="footer-title">Trust & Safety</div>
+      <a href="/#faq">FAQ</a>
+      <a href="#" data-modal-open>Support</a>
+      <a href="/#pricing">Pricing</a>
+    </div>
+    <div>
+      <div class="footer-title">Contact</div>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      {% unless include.home_links %}
+        <span>Response within 24 hours</span>
+      {% endunless %}
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 Team Budget. All rights reserved.</div>
+</footer>
