@@ -19,6 +19,9 @@ If guidance conflicts, follow this order.
   - `_includes/demo-modal.html`
 - Keep reusable content-area top sections in:
   - `_includes/page-hero.html`
+- Keep homepage sections modular in:
+  - `_includes/home/*.html`
+  - `index.markdown` should only orchestrate include order
 - Keep author rendering logic in one include:
   - `_includes/author-badge.html`
 - Keep design tokens centralized in:
@@ -34,6 +37,20 @@ If guidance conflicts, follow this order.
 - Docs items: `/docs/:name/` (`_docs/*.md`)
 - Articles index: `/articles/` (`articles/index.markdown`)
 - Articles items: `/articles/:name/` (`_articles/*.md`)
+
+## Homepage Component Map
+- `home/hero.html`
+- `home/trust.html`
+- `home/problems.html`
+- `home/features.html`
+- `home/how-it-works.html`
+- `home/product-tour.html`
+- `home/testimonials.html`
+- `home/pricing.html`
+- `home/faq.html`
+- `home/docs-cta.html`
+- `home/about.html`
+- `home/final-cta.html`
 
 ## Design Direction (Helio-Inspired, Not Cloned)
 - Use dark, high-contrast, cloud-tech visual language
