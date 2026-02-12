@@ -651,6 +651,7 @@ img {
 }
 
 .tour-media {
+  --thumb-scale: 0.55;
   position: relative;
   width: 100%;
   min-height: 190px;
@@ -672,7 +673,8 @@ img {
   max-width: none;
   max-height: none;
   display: block;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(var(--thumb-scale));
+  will-change: transform;
 }
 
 .tour-placeholder {
