@@ -7,7 +7,18 @@
     <div class="tour-grid">
       <div class="tour-card">
         <div class="tour-label">Budget overview</div>
-        <div class="tour-placeholder">Read-only Other and Refunds revenue rows with clear explanations</div>
+        <button
+          class="tour-media"
+          type="button"
+          data-zoom-image="{{ '/assets/images/ss-budget.png' | relative_url }}"
+          data-zoom-caption="Read-only Other and Refunds revenue rows with clear explanations."
+          aria-label="Open budget overview screenshot"
+        >
+          <img
+            src="{{ '/assets/images/ss-budget.png' | relative_url }}"
+            alt="Budget overview with category totals and revenue rows"
+          />
+        </button>
       </div>
       <div class="tour-card">
         <div class="tour-label">Roster payments</div>
