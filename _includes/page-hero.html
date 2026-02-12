@@ -4,9 +4,10 @@
 {% assign hero_card_title = include.card_title | default: "Team Budget Snapshot" %}
 {% assign created_at = page.created | default: page.date %}
 {% assign updated_at = page.updated %}
+{% assign hide_card = include.hide_card == true or include.hide_card == "true" %}
 
 <section class="content-hero">
-  <div class="container content-hero-grid">
+  <div class="container content-hero-grid{% if hide_card %} no-card{% endif %}">
     <div class="content-hero-copy">
       <p class="kicker">{{ hero_kicker }}</p>
       <h1>{{ hero_title }}</h1>
@@ -28,23 +29,25 @@
       {% endif %}
     </div>
 
-    <aside class="content-hero-card" aria-label="Section overview">
-      <div class="card-header">{{ hero_card_title }}</div>
-      {% if include.card_items %}
-        <ul class="content-hero-list">
-          {% assign items = include.card_items | split: "|" %}
-          {% for item in items %}
-            <li>{{ item | strip }}</li>
-          {% endfor %}
-        </ul>
-      {% else %}
-        <ul class="content-hero-list">
-          <li>Built for volunteer hockey treasurers</li>
-          <li>Outcomes-first guidance and examples</li>
-          <li>Consistent with Team Money Status workflows</li>
-        </ul>
-      {% endif %}
-      <a class="button ghost" href="#" data-modal-open>Request Demo</a>
-    </aside>
+    {% unless hide_card %}
+      <aside class="content-hero-card" aria-label="Section overview">
+        <div class="card-header">{{ hero_card_title }}</div>
+        {% if include.card_items %}
+          <ul class="content-hero-list">
+            {% assign items = include.card_items | split: "|" %}
+            {% for item in items %}
+              <li>{{ item | strip }}</li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <ul class="content-hero-list">
+            <li>Built for volunteer hockey treasurers</li>
+            <li>Outcomes-first guidance and examples</li>
+            <li>Consistent with Team Money Status workflows</li>
+          </ul>
+        {% endif %}
+        <a class="button ghost" href="#" data-modal-open>Request Demo</a>
+      </aside>
+    {% endunless %}
   </div>
 </section>
