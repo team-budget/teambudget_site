@@ -17,6 +17,8 @@ If guidance conflicts, follow this order.
 - Keep shared navigation + modal behavior in includes:
   - `_includes/nav.html`
   - `_includes/demo-modal.html`
+- Keep reusable content-area top sections in:
+  - `_includes/page-hero.html`
 - Keep author rendering logic in one include:
   - `_includes/author-badge.html`
 - Keep design tokens centralized in:
@@ -78,7 +80,6 @@ When changing design/content from prompts:
 
 ## Task Log
 ### In Progress
-- [ ] Add article/blog byline metadata to all existing content entries.
 - [ ] Add sample second author entry and verify fallback avatar behavior.
 
 ### Next Up
@@ -87,6 +88,7 @@ When changing design/content from prompts:
 
 ### Done
 - [x] Established dark, helio-inspired design system in `assets/css/styles.css`.
+- [x] Added reusable content-area hero include across Blog/Docs/Articles layouts (`_includes/page-hero.html`).
 - [x] Centralized author metadata and rendering (`config/authors.yml`, `_includes/author-badge.html`).
 - [x] Added post/article metadata support for created/updated/author.
 - [x] Aligned homepage content with `../hockey_treasurer/WEBSITE.md`.

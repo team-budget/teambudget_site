@@ -18,30 +18,18 @@
     <div class="page">
       {% include nav.html %}
 
-      <main class="section">
-        <div class="container">
-          <div class="section-heading">
-            <h1>{{ page.title }}</h1>
-            {% if page.collection == "articles" %}
-              {% assign created_at = page.created | default: page.date %}
-              {% assign updated_at = page.updated %}
-              <div class="content-meta">
-                {% if created_at %}
-                  <span>Created {{ created_at | date: "%B %d, %Y" }}</span>
-                {% endif %}
-                {% if updated_at %}
-                  <span>Updated {{ updated_at | date: "%B %d, %Y" }}</span>
-                {% endif %}
-              </div>
-              {% if page.author %}
-                {% include author-badge.html author_key=page.author show_email=true %}
-              {% endif %}
-            {% elsif page.subtitle %}
-              <p class="muted">{{ page.subtitle }}</p>
-            {% endif %}
+      <main>
+        {% if page.collection == "articles" %}
+          {% include page-hero.html kicker="Article" title=page.title subtitle=page.subtitle show_meta=true show_author=true card_title="Article Focus" card_items="Practical finance guidance for hockey teams|Operations and governance patterns that scale|Clarity-first communication for parents and staff" %}
+        {% else %}
+          {% include page-hero.html kicker="Articles" title=page.title subtitle=page.subtitle card_title="Article Library" card_items="Long-form breakdowns of key workflows|Lessons from real team finance operations|Templates and checklists you can reuse" %}
+        {% endif %}
+
+        <section class="section section-tight">
+          <div class="container">
+            {{ content }}
           </div>
-          {{ content }}
-        </div>
+        </section>
       </main>
 
       <footer class="site-footer">

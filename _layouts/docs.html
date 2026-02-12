@@ -18,14 +18,14 @@
     <div class="page">
       {% include nav.html %}
 
-      <main class="section">
-        <div class="container">
-          <div class="section-heading">
-            <h1>{{ page.title }}</h1>
-            <p class="muted">{{ page.subtitle }}</p>
+      <main>
+        {% include page-hero.html kicker="Documentation" title=page.title subtitle=page.subtitle card_title="Docs Focus" card_items="Fast onboarding for new treasurers|Operational guides for invites and permissions|Money status and reporting workflows" %}
+
+        <section class="section section-tight">
+          <div class="container">
+            {{ content }}
           </div>
-          {{ content }}
-        </div>
+        </section>
       </main>
 
       <footer class="site-footer">

@@ -18,24 +18,14 @@
     <div class="page">
       {% include nav.html %}
 
-      <main class="section">
-        <div class="container">
-          <div class="section-heading">
-            {% assign created_at = page.created | default: page.date %}
-            {% assign updated_at = page.updated %}
-            <h1>{{ page.title }}</h1>
-            <div class="content-meta">
-              <span>Created {{ created_at | date: "%B %d, %Y" }}</span>
-              {% if updated_at %}
-                <span>Updated {{ updated_at | date: "%B %d, %Y" }}</span>
-              {% endif %}
-            </div>
-            {% if page.author %}
-              {% include author-badge.html author_key=page.author show_email=true %}
-            {% endif %}
+      <main>
+        {% include page-hero.html kicker="Blog Post" title=page.title show_meta=true show_author=true card_title="Post Summary" card_items="Actionable guidance for hockey treasurers|Field-tested communication approaches|Built for quick weekly operations" %}
+
+        <section class="section section-tight">
+          <div class="container">
+            {{ content }}
           </div>
-          {{ content }}
-        </div>
+        </section>
       </main>
 
       <footer class="site-footer">
