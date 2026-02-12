@@ -12,38 +12,24 @@
         <a class="button ghost" href="#tour">See How It Works</a>
       </div>
     </div>
-    <div class="hero-card">
-      <div class="card-header">Team Money Status</div>
-      <div class="card-row">
-        <span>Expected</span>
-        <strong>$11,200</strong>
-      </div>
-      <div class="card-row">
-        <span>Current</span>
-        <strong>$10,960</strong>
-      </div>
-      <div class="progress">
-        <div class="progress-bar"></div>
-      </div>
-      <div class="card-grid">
-        <div>
-          <div class="label">Difference</div>
-          <div class="value">-$240</div>
-        </div>
-        <div>
-          <div class="label">Outstanding</div>
-          <div class="value">$1,240</div>
-        </div>
-        <div>
-          <div class="label">Refunds</div>
-          <div class="value">$380</div>
-        </div>
-        <div>
-          <div class="label">Last check</div>
-          <div class="value">2 days ago</div>
-        </div>
-      </div>
-      <div class="card-footer">Always visible so you can quickly confirm if team money matches.</div>
-    </div>
+    <figure class="hero-screenshot">
+      <button
+        class="hero-screenshot-button"
+        type="button"
+        data-zoom-image="{{ '/assets/images/ss-budget.png' | relative_url }}"
+        aria-label="Open budget screenshot in full size"
+      >
+        <img src="{{ '/assets/images/ss-budget.png' | relative_url }}" alt="Budget screen showing team finances and category totals" />
+      </button>
+    </figure>
   </div>
 </section>
+
+<div class="image-zoom-modal" id="image-zoom-modal" aria-hidden="true">
+  <button class="image-zoom-backdrop" type="button" data-image-zoom-close aria-label="Close zoomed image"></button>
+  <div class="image-zoom-content" role="dialog" aria-modal="true" aria-label="Zoomed budget screenshot">
+    <button class="image-zoom-close" type="button" data-image-zoom-close aria-label="Close zoomed image">×</button>
+    <img id="image-zoom-target" src="" alt="" />
+  </div>
+</div>
+<script src="{{ '/assets/js/image-zoom.js' | relative_url }}" defer></script>
