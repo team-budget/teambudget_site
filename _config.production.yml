@@ -1,2 +1,3 @@
 url: "https://teambudget.ca"
 login_url: "https://hockey.teambudget.ca"
+demo_request_api_url: "https://hockey.teambudget.ca/api/external/feedback_requests"
