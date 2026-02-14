@@ -13,5 +13,5 @@ layout: default
   {% include home/faq.html %}
   <!-- {% include home/docs-cta.html %} -->
   {% include home/about.html %}
-  {% include home/final-cta.html %}
+  <!-- {% include home/final-cta.html %} -->
 </div>
